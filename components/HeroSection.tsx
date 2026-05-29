@@ -44,7 +44,8 @@ export default function HeroSection() {
           <img
             src="/ajith.png"
             alt="Pulloju Ajith"
-            className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-500"
+            className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+            style={{ objectPosition: "center 20%" }}
           />
         </motion.div>
 
