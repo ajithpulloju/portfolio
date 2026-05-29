@@ -165,7 +165,7 @@ export default function ExperienceSection() {
                   className="h-full rounded-full"
                   style={{
                     width: `${lang.proficiency}%`,
-                    background: `linear-gradient(90deg, var(--accent-orange), rgba(212, 175, 55, 0.4))`,
+                    background: `linear-gradient(90deg, ${lang.color}, transparent)`,
                     originX: 0
                   }}
                 />
