@@ -69,7 +69,7 @@ export default function AboutSection() {
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
             className="relative flex justify-center"
           >
-            <div className="relative w-72 h-80 sm:w-96 sm:h-[440px]">
+            <div className="relative w-64 h-72 sm:w-80 sm:h-96 md:w-96 md:h-[440px]">
               {/* Glowing border frame */}
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[var(--accent-orange)] via-[var(--accent-purple)] to-[var(--accent-blue)] p-[2px]">
                 <div className="w-full h-full rounded-3xl overflow-hidden bg-dark-800">
@@ -93,14 +93,14 @@ export default function AboutSection() {
               </div>
 
               {/* Floating badges */}
-              <div className="absolute -bottom-6 -right-6 glass px-4 py-3 rounded-2xl border border-white/10 shadow-xl">
+              <div className="absolute -bottom-4 -right-2 sm:-bottom-6 sm:-right-6 glass px-4 py-3 rounded-2xl border border-white/10 shadow-xl z-10">
                 <p className="text-xs font-mono text-[var(--text-muted)]">Status</p>
                 <p className="text-sm font-bold text-[var(--accent-orange)] flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
                   Available for Collaboration
                 </p>
               </div>
-              <div className="absolute -top-6 -left-6 glass px-4 py-3 rounded-2xl border border-white/10 shadow-xl">
+              <div className="absolute -top-4 -left-2 sm:-top-6 sm:-left-6 glass px-4 py-3 rounded-2xl border border-white/10 shadow-xl z-10">
                 <p className="text-xs font-mono text-[var(--text-muted)]">Location</p>
                 <p className="text-sm font-bold text-[var(--text)]">📍 Warangal, India</p>
               </div>

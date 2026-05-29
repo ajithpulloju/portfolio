@@ -42,7 +42,7 @@ export default function HeroSection() {
            initial={{ opacity: 0, y: 50 }}
            animate={{ opacity: 1, y: 0 }}
            transition={{ duration: 1.5, ease: "easeOut", delay: 0.3 }}
-           className="absolute bottom-0 right-[5%] lg:right-[15%] w-[350px] lg:w-[550px] z-0 pointer-events-auto flex justify-center items-end h-[80%]"
+           className="absolute bottom-0 -right-[5%] sm:right-[5%] lg:right-[15%] w-[260px] sm:w-[350px] lg:w-[550px] z-0 pointer-events-auto flex justify-center items-end h-[80%]"
         >
           <img 
             src="/ajith.png" 
@@ -71,10 +71,10 @@ export default function HeroSection() {
 
           {/* Luxury Large Heading */}
           <motion.div variants={itemVariants} className="relative mt-8">
-            <h1 className="font-thin-custom text-[clamp(60px,12vw,140px)] leading-[0.9] tracking-tight text-[var(--text)] whitespace-nowrap">
+            <h1 className="font-thin-custom text-[clamp(45px,12vw,140px)] leading-[0.9] tracking-tight text-[var(--text)] whitespace-nowrap">
               Pulloju
               <br />
-              <span className="text-[var(--text-muted)] ml-12 lg:ml-24">
+              <span className="text-[var(--text-muted)] ml-6 sm:ml-12 lg:ml-24">
                 Ajith
               </span>
             </h1>
@@ -133,23 +133,25 @@ export default function HeroSection() {
           </motion.div>
 
           {/* CTA Buttons - more elegant */}
-          <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-6 pt-2">
-            <button
-              onClick={() =>
-                document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" })
-              }
-              className="px-6 py-2.5 rounded-full border border-white/10 glass text-[11px] font-light-custom text-[var(--text)] tracking-[0.2em] uppercase hover:text-[var(--accent-orange)] hover:border-[var(--accent-orange)]/50 hover:shadow-[0_0_15px_rgba(245,158,11,0.2)] transition-all duration-300 cursor-pointer"
-            >
-              View Projects
-            </button>
-            <a
-              href="/resume.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-2.5 rounded-full border border-[var(--accent-orange)]/35 bg-[var(--accent-orange)]/10 text-[11px] font-light-custom text-[var(--accent-orange)] tracking-[0.2em] uppercase hover:bg-[var(--accent-orange)] hover:text-black hover:shadow-[0_0_20px_rgba(245,158,11,0.3)] transition-all duration-300"
-            >
-              View Resume
-            </a>
+          <motion.div variants={itemVariants} className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-4 sm:gap-6 pt-2">
+            <div className="flex flex-wrap gap-4">
+              <button
+                onClick={() =>
+                  document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" })
+                }
+                className="px-6 py-2.5 rounded-full border border-white/10 glass text-[11px] font-light-custom text-[var(--text)] tracking-[0.2em] uppercase hover:text-[var(--accent-orange)] hover:border-[var(--accent-orange)]/50 hover:shadow-[0_0_15px_rgba(245,158,11,0.2)] transition-all duration-300 cursor-pointer"
+              >
+                View Projects
+              </button>
+              <a
+                href="/resume.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-2.5 rounded-full border border-[var(--accent-orange)]/35 bg-[var(--accent-orange)]/10 text-[11px] font-light-custom text-[var(--accent-orange)] tracking-[0.2em] uppercase hover:bg-[var(--accent-orange)] hover:text-black hover:shadow-[0_0_20px_rgba(245,158,11,0.3)] transition-all duration-300"
+              >
+                View Resume
+              </a>
+            </div>
             <div className="flex gap-4">
               <a
                 href="https://github.com/pullojuajith"
