@@ -51,23 +51,23 @@ export default function AboutSection() {
       {/* Orb */}
       <div className="orb w-96 h-96 -top-20 right-0 bg-[var(--accent-purple)] opacity-10" />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto px-5 lg:px-12">
         {/* Section Label */}
-        <div className="flex items-center gap-4 mb-16">
+        <div className="flex items-center gap-4 mb-10 lg:mb-16">
           <span className="text-xs font-mono uppercase tracking-widest text-[var(--accent-orange)]">
             02 / About
           </span>
           <div className="flex-1 h-px bg-white/5" />
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left — Profile Image */}
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          {/* Left — Profile Image — hidden on mobile, shown on lg+ */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className="relative flex justify-center"
+            className="hidden lg:flex relative justify-center"
           >
             <div className="relative w-64 h-72 sm:w-80 sm:h-96 md:w-96 md:h-[440px]">
               {/* Glowing border frame */}
@@ -113,11 +113,11 @@ export default function AboutSection() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="flex flex-col gap-6"
+            className="flex flex-col gap-5 lg:gap-6"
           >
             <motion.div variants={itemVariants}>
               <h2
-                className="font-bebas text-[clamp(64px,10vw,120px)] leading-none text-[var(--text)]"
+                className="font-bebas text-[clamp(48px,10vw,120px)] leading-none text-[var(--text)]"
                 style={{ WebkitTextStroke: "1px rgba(255,255,255,0.04)" }}
               >
                 HELLO
@@ -156,7 +156,7 @@ export default function AboutSection() {
             {/* Info Grid */}
             <motion.div
               variants={itemVariants}
-              className="grid grid-cols-2 gap-4 mt-2"
+              className="grid grid-cols-2 gap-3 lg:gap-4 mt-2"
             >
               {[
                 { label: "University", value: "SR University" },

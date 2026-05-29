@@ -64,7 +64,7 @@ export default function ContactSection() {
       <div className="orb w-[500px] h-[500px] -top-20 left-1/2 -translate-x-1/2 bg-[var(--accent-orange)] opacity-10" />
       <div className="orb w-80 h-80 bottom-0 right-0 bg-[var(--accent-purple)] opacity-10" />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto px-5 lg:px-12">
         {/* Label */}
         <div className="flex items-center gap-4 mb-4">
           <span className="text-xs font-mono uppercase tracking-widest text-[var(--accent-orange)]">
@@ -83,7 +83,7 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Left — Info */}
           <motion.div
             variants={containerVariants}
@@ -123,14 +123,14 @@ export default function ContactSection() {
             ))}
 
             {/* Social Links */}
-            <motion.div variants={itemVariants} className="flex gap-4 mt-2">
+            <motion.div variants={itemVariants} className="flex flex-wrap gap-3 mt-2">
               {socialLinks.map((s) => (
                 <a
                   key={s.label}
                   href={s.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center gap-3 glass border border-white/5 rounded-2xl px-5 py-3 text-sm font-semibold text-[var(--text-muted)] hover:text-[var(--text)] transition-all duration-300 group"
+                  className="flex items-center gap-2 glass border border-white/5 rounded-2xl px-4 py-2.5 text-sm font-semibold text-[var(--text-muted)] hover:text-[var(--text)] transition-all duration-300 group"
                   style={{"--hover-color": s.color} as React.CSSProperties}
                 >
                   <span

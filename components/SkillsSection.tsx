@@ -49,7 +49,7 @@ export default function SkillsSection() {
     <section id="skills" className="relative py-28 overflow-hidden">
       <div className="orb w-96 h-96 bottom-0 right-1/4 bg-[var(--accent-blue)] opacity-8" />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 relative">
+      <div className="max-w-7xl mx-auto px-5 lg:px-12 relative">
         {/* Subtle decorative grid/lines */}
         <div className="absolute top-0 right-[10%] w-[1px] h-32 bg-gradient-to-b from-white/10 to-transparent"></div>
 
@@ -61,11 +61,11 @@ export default function SkillsSection() {
           <div className="flex-1 h-[1px] bg-white/5" />
         </div>
 
-        <div className="mb-20">
-          <h2 className="font-thin-custom text-[clamp(40px,8vw,100px)] leading-[0.9] tracking-tight text-[var(--text)]">
+        <div className="mb-12 lg:mb-20">
+          <h2 className="font-thin-custom text-[clamp(36px,8vw,100px)] leading-[0.9] tracking-tight text-[var(--text)]">
             Technology
             <br />
-            <span className="text-[var(--text-muted)] ml-12 sm:ml-24">Stack</span>
+            <span className="text-[var(--text-muted)] ml-6 sm:ml-24">Stack</span>
           </h2>
         </div>
 
@@ -128,7 +128,7 @@ export default function SkillsSection() {
            initial="hidden"
            whileInView="show"
            viewport={{ once: true, margin: "-100px" }}
-           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16"
+           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 lg:gap-x-12 gap-y-10 lg:gap-y-16"
         >
           {skillCategories.map((cat) => (
             <motion.div

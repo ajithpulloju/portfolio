@@ -46,7 +46,7 @@ export default function EducationSection() {
     <section id="education" className="relative py-28 overflow-hidden">
       <div className="orb w-96 h-96 top-20 right-0 bg-[var(--accent-purple)] opacity-8" />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto px-5 lg:px-12">
         {/* Label */}
         <div className="flex items-center gap-4 mb-4">
           <span className="text-xs font-mono uppercase tracking-widest text-[var(--accent-orange)]">
@@ -55,15 +55,15 @@ export default function EducationSection() {
           <div className="flex-1 h-px bg-white/5" />
         </div>
 
-        <div className="mb-16">
-          <h2 className="font-bebas text-[clamp(48px,8vw,96px)] leading-none text-[var(--text)]">
+        <div className="mb-10 lg:mb-16">
+          <h2 className="font-bebas text-[clamp(40px,8vw,96px)] leading-none text-[var(--text)]">
             ACADEMIC{" "}
             <span className="text-gradient">JOURNEY</span>
           </h2>
         </div>
 
         {/* Timeline */}
-        <div className="relative flex flex-col gap-8">
+        <div className="relative flex flex-col gap-5 lg:gap-8">
           {/* Vertical line */}
           <div className="absolute left-[11px] top-6 bottom-6 w-[2px] bg-gradient-to-b from-[var(--accent-orange)] via-[var(--accent-purple)] to-transparent hidden sm:block" />
 
@@ -87,7 +87,7 @@ export default function EducationSection() {
               {/* Card */}
               <motion.div
                 whileHover={{ x: 6, scale: 1.01 }}
-                className="flex-1 glass rounded-3xl border border-white/5 p-6 sm:p-8 group transition-all duration-300"
+                className="flex-1 glass rounded-2xl lg:rounded-3xl border border-white/5 p-5 sm:p-8 group transition-all duration-300"
                 style={{
                   background: `linear-gradient(135deg, ${edu.color}06 0%, transparent 100%)`,
                 }}

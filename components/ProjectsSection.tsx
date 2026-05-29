@@ -59,7 +59,7 @@ export default function ProjectsSection() {
     <section id="projects" className="relative py-28 overflow-hidden">
       <div className="orb w-[500px] h-[500px] -top-20 left-0 bg-[var(--accent-orange)] opacity-8" />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto px-5 lg:px-12">
         {/* Label */}
         <div className="flex items-center gap-4 mb-4">
           <span className="text-xs font-mono uppercase tracking-widest text-[var(--accent-orange)]">
@@ -83,7 +83,7 @@ export default function ProjectsSection() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.1 }}
-          className="grid lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
         >
           {projects.map((project) => (
             <motion.div

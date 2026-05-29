@@ -8,8 +8,8 @@ export default function Footer() {
     <footer className="relative py-16 border-t border-white/5 overflow-hidden">
       <div className="orb w-80 h-80 -bottom-40 left-1/2 -translate-x-1/2 bg-[var(--accent-orange)] opacity-5" />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-8">
+      <div className="max-w-7xl mx-auto px-5 lg:px-12">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex flex-col items-center sm:items-start gap-2">
             <span className="font-bebas text-4xl text-gradient">PA.</span>
@@ -53,7 +53,7 @@ export default function Footer() {
           <p className="text-xs font-mono text-[var(--text-muted)]">
             © 2025 Pulloju Ajith. All rights reserved.
           </p>
-          <p className="text-xs font-mono text-[var(--text-muted)]">
+          <p className="text-[10px] font-mono text-[var(--text-muted)] text-center sm:text-left">
             Built with Next.js · Tailwind CSS · Framer Motion
           </p>
         </div>

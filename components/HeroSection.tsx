@@ -32,7 +32,134 @@ export default function HeroSection() {
       <div className="orb w-[500px] h-[500px] bottom-0 -left-40 bg-[var(--accent-purple)] opacity-10" />
       <div className="orb w-[400px] h-[400px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[var(--accent-blue)] opacity-5" />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full py-24 relative">
+      {/* ── MOBILE LAYOUT (< lg) ── stacked, centered, clean */}
+      <div className="lg:hidden flex flex-col items-center text-center px-6 pt-10 pb-28 gap-6 relative z-10">
+        {/* Profile Image — centered on mobile */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+          className="relative w-36 h-36 rounded-full overflow-hidden border-2 border-[var(--accent-orange)]/40 shadow-[0_0_40px_rgba(212,175,55,0.2)]"
+        >
+          <img
+            src="/ajith.png"
+            alt="Pulloju Ajith"
+            className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-500"
+          />
+        </motion.div>
+
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="show"
+          className="flex flex-col items-center gap-5"
+        >
+          {/* Name */}
+          <motion.div variants={itemVariants}>
+            <h1 className="font-thin-custom text-[clamp(52px,16vw,80px)] leading-[0.9] tracking-tight text-[var(--text)]">
+              Pulloju
+              <br />
+              <span className="text-[var(--accent-orange)]">Ajith</span>
+            </h1>
+          </motion.div>
+
+          {/* Role badges */}
+          <motion.div variants={itemVariants} className="flex flex-wrap justify-center gap-2">
+            {["Full Stack", "AI Systems"].map((tag) => (
+              <span
+                key={tag}
+                className="px-3 py-1 text-[10px] uppercase font-mono tracking-wider rounded-full border border-white/10 bg-white/5 text-[var(--text-muted)]"
+              >
+                {tag}
+              </span>
+            ))}
+          </motion.div>
+
+          {/* Tagline */}
+          <motion.p
+            variants={itemVariants}
+            className="text-sm text-[var(--text-muted)] leading-relaxed max-w-xs"
+          >
+            3rd-year B.Tech CSE student at SR University, passionate about{" "}
+            <span className="text-[var(--text)] font-medium">Full Stack Development</span> &{" "}
+            <span className="text-[var(--text)] font-medium">AI solutions</span>.
+          </motion.p>
+
+          {/* Quote */}
+          <motion.p variants={itemVariants} className="text-[var(--accent-orange)] text-[10px] uppercase tracking-widest font-mono">
+            "Building impactful products with code, creativity, and AI."
+          </motion.p>
+
+          {/* Tags */}
+          <motion.div variants={itemVariants} className="flex flex-wrap justify-center gap-2">
+            {["Hackathon Builder", "Problem Solver", "Open Source Learner"].map((tag) => (
+              <span
+                key={tag}
+                className="px-3 py-1 text-[9px] uppercase font-mono tracking-wider rounded-xl border border-white/5 bg-white/5 text-[var(--text-muted)]"
+              >
+                {tag}
+              </span>
+            ))}
+          </motion.div>
+
+          {/* CTA Buttons */}
+          <motion.div variants={itemVariants} className="flex flex-col gap-3 w-full max-w-xs">
+            <button
+              onClick={() =>
+                document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" })
+              }
+              className="w-full py-3 rounded-full border border-white/10 glass text-[11px] font-light-custom text-[var(--text)] tracking-[0.2em] uppercase hover:text-[var(--accent-orange)] hover:border-[var(--accent-orange)]/50 transition-all duration-300 cursor-pointer"
+            >
+              View Projects
+            </button>
+            <a
+              href="/resume.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-3 rounded-full border border-[var(--accent-orange)]/35 bg-[var(--accent-orange)]/10 text-[11px] font-light-custom text-[var(--accent-orange)] tracking-[0.2em] uppercase text-center hover:bg-[var(--accent-orange)] hover:text-black transition-all duration-300"
+            >
+              View Resume
+            </a>
+          </motion.div>
+
+          {/* Social Icons */}
+          <motion.div variants={itemVariants} className="flex gap-4 justify-center">
+            {[
+              { href: "https://github.com/pullojuajith", icon: <Github size={18} />, label: "GitHub" },
+              { href: "https://linkedin.com/in/pullojuajith", icon: <Linkedin size={18} />, label: "LinkedIn" },
+              { href: "https://www.instagram.com/ajju_xo.xo/", icon: <Instagram size={18} />, label: "Instagram" },
+            ].map((s) => (
+              <a
+                key={s.label}
+                href={s.href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={s.label}
+                className="w-11 h-11 rounded-full glass border border-white/10 flex items-center justify-center text-[var(--text-muted)] hover:text-[var(--accent-orange)] hover:border-[var(--accent-orange)] transition-all duration-300"
+              >
+                {s.icon}
+              </a>
+            ))}
+          </motion.div>
+
+          {/* Stats row */}
+          <motion.div variants={itemVariants} className="grid grid-cols-3 gap-4 w-full max-w-xs pt-2">
+            {[
+              { label: "Projects", value: "10+" },
+              { label: "Experience", value: "3 Yrs" },
+              { label: "Technologies", value: "20+" },
+            ].map((stat) => (
+              <div key={stat.label} className="flex flex-col items-center gap-1 glass border border-white/5 rounded-2xl py-3">
+                <span className="text-xl font-thin-custom text-[var(--text)]">{stat.value}</span>
+                <span className="text-[8px] font-mono tracking-widest text-[var(--text-muted)] uppercase">{stat.label}</span>
+              </div>
+            ))}
+          </motion.div>
+        </motion.div>
+      </div>
+
+      {/* ── DESKTOP LAYOUT (>= lg) ── original overlapping design */}
+      <div className="hidden lg:block max-w-7xl mx-auto px-12 w-full py-24 relative">
         {/* Subtle decorative grid/lines */}
         <div className="absolute top-0 left-0 w-full h-[1px] bg-white/5"></div>
         <div className="absolute top-0 left-0 w-[1px] h-full bg-white/5"></div>
@@ -42,15 +169,15 @@ export default function HeroSection() {
            initial={{ opacity: 0, y: 50 }}
            animate={{ opacity: 1, y: 0 }}
            transition={{ duration: 1.5, ease: "easeOut", delay: 0.3 }}
-           className="absolute bottom-0 -right-[5%] sm:right-[5%] lg:right-[15%] w-[260px] sm:w-[350px] lg:w-[550px] z-0 pointer-events-auto flex justify-center items-end h-[80%]"
+           className="absolute bottom-0 right-[15%] w-[550px] z-0 pointer-events-auto flex justify-center items-end h-[80%]"
         >
-          <img 
-            src="/ajith.png" 
+          <img
+            src="/ajith.png"
             alt="Pulloju Ajith"
             className="w-full max-h-full object-contain grayscale brightness-90 opacity-90 transition-all duration-500 ease-in-out cursor-pointer hover:grayscale-0 hover:brightness-100 hover:opacity-100 hover:scale-105 hover:drop-shadow-2xl"
-            style={{ 
-              maskImage: "linear-gradient(to top, transparent 0%, black 15%, black 100%)", 
-              WebkitMaskImage: "linear-gradient(to top, transparent 0%, black 15%, black 100%)" 
+            style={{
+              maskImage: "linear-gradient(to top, transparent 0%, black 15%, black 100%)",
+              WebkitMaskImage: "linear-gradient(to top, transparent 0%, black 15%, black 100%)"
             }}
           />
         </motion.div>
@@ -71,10 +198,10 @@ export default function HeroSection() {
 
           {/* Luxury Large Heading */}
           <motion.div variants={itemVariants} className="relative mt-8">
-            <h1 className="font-thin-custom text-[clamp(45px,12vw,140px)] leading-[0.9] tracking-tight text-[var(--text)] whitespace-nowrap">
+            <h1 className="font-thin-custom text-[clamp(60px,12vw,140px)] leading-[0.9] tracking-tight text-[var(--text)] whitespace-nowrap">
               Pulloju
               <br />
-              <span className="text-[var(--text-muted)] ml-6 sm:ml-12 lg:ml-24">
+              <span className="text-[var(--text-muted)] ml-24">
                 Ajith
               </span>
             </h1>
@@ -106,11 +233,11 @@ export default function HeroSection() {
             variants={itemVariants}
             className="max-w-2xl text-sm sm:text-base text-[var(--text-muted)] leading-[1.8] font-light-custom border-l border-white/10 pl-6 animate-glow"
           >
-            I’m a 3rd-year Computer Science Engineering student passionate about{" "}
+            I'm a 3rd-year Computer Science Engineering student passionate about{" "}
             <span className="text-[var(--text)]">Full Stack Development</span>,{" "}
             <span className="text-[var(--text)]">AI solutions</span>, and modern web technologies. I love building real-world projects, participating in hackathons, and creating impactful digital experiences.
             <span className="text-[var(--accent-orange)] block mt-2 text-xs uppercase tracking-widest font-mono">
-              “Building impactful products with code, creativity, and AI.”
+              "Building impactful products with code, creativity, and AI."
             </span>
           </motion.p>
 
@@ -132,26 +259,24 @@ export default function HeroSection() {
             ))}
           </motion.div>
 
-          {/* CTA Buttons - more elegant */}
-          <motion.div variants={itemVariants} className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-4 sm:gap-6 pt-2">
-            <div className="flex flex-wrap gap-4">
-              <button
-                onClick={() =>
-                  document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" })
-                }
-                className="px-6 py-2.5 rounded-full border border-white/10 glass text-[11px] font-light-custom text-[var(--text)] tracking-[0.2em] uppercase hover:text-[var(--accent-orange)] hover:border-[var(--accent-orange)]/50 hover:shadow-[0_0_15px_rgba(245,158,11,0.2)] transition-all duration-300 cursor-pointer"
-              >
-                View Projects
-              </button>
-              <a
-                href="/resume.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-2.5 rounded-full border border-[var(--accent-orange)]/35 bg-[var(--accent-orange)]/10 text-[11px] font-light-custom text-[var(--accent-orange)] tracking-[0.2em] uppercase hover:bg-[var(--accent-orange)] hover:text-black hover:shadow-[0_0_20px_rgba(245,158,11,0.3)] transition-all duration-300"
-              >
-                View Resume
-              </a>
-            </div>
+          {/* CTA Buttons */}
+          <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-6 pt-2">
+            <button
+              onClick={() =>
+                document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" })
+              }
+              className="px-6 py-2.5 rounded-full border border-white/10 glass text-[11px] font-light-custom text-[var(--text)] tracking-[0.2em] uppercase hover:text-[var(--accent-orange)] hover:border-[var(--accent-orange)]/50 hover:shadow-[0_0_15px_rgba(245,158,11,0.2)] transition-all duration-300 cursor-pointer"
+            >
+              View Projects
+            </button>
+            <a
+              href="/resume.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2.5 rounded-full border border-[var(--accent-orange)]/35 bg-[var(--accent-orange)]/10 text-[11px] font-light-custom text-[var(--accent-orange)] tracking-[0.2em] uppercase hover:bg-[var(--accent-orange)] hover:text-black hover:shadow-[0_0_20px_rgba(245,158,11,0.3)] transition-all duration-300"
+            >
+              View Resume
+            </a>
             <div className="flex gap-4">
               <a
                 href="https://github.com/pullojuajith"
@@ -183,15 +308,14 @@ export default function HeroSection() {
             </div>
           </motion.div>
 
-          {/* Luxury Stats Layout (like the graph image) */}
+          {/* Desktop Stats */}
           <motion.div
             variants={itemVariants}
-            className="absolute top-32 right-12 hidden lg:flex flex-col gap-10 opacity-80"
+            className="absolute top-32 right-12 flex flex-col gap-10 opacity-80"
           >
             <span className="text-[10px] font-light-custom text-[var(--text-muted)] tracking-[0.3em] uppercase absolute -top-8 right-0 text-right w-full">
               STATISTICS
             </span>
-            
             <div className="flex gap-12 items-end mt-4">
               {[
                 { label: "PROJECTS", value: "10+" },
@@ -211,8 +335,6 @@ export default function HeroSection() {
                 </div>
               ))}
             </div>
-            
-            {/* Minimalistic Chart Bars Decoration */}
             <div className="flex items-end gap-2 h-24 mt-4 w-full justify-end border-b border-white/10 pb-0">
                <div className="w-8 h-1/3 bg-white/10" />
                <div className="w-8 h-2/3 bg-white/15" />
