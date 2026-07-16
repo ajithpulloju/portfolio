@@ -16,6 +16,7 @@ interface Certification {
 }
 
 const certificationsData: Certification[] = [
+  { id: "power-bi", title: "Power BI for Beginners", issuer: "Simplilearn / Microsoft", date: "Jul 2026", image: "/certs/power-bi.jpg", certId: "10475876" },
   { id: "dsa", title: "CS201: Elementary Data Structures", issuer: "Saylor University", date: "Apr 14, 2026", image: "/certs/DSA.jpg", grade: "88.71%", hours: "36 Hours", certId: "8313450122PO" },
   { id: "ibm-hci", title: "User Experience Design Fundamentals", issuer: "IBM / SkillsBuild", date: "Apr 2026", image: "/certs/HCI%20IBM%20certificate.jpg" },
   { id: "cyber-sec", title: "CS260: Intro to Cryptography and Network Security", issuer: "Saylor Academy", date: "Apr 2026", image: "/certs/cyber%20security.jpg" },
