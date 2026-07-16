@@ -13,10 +13,21 @@ interface Certification {
   grade?: string;
   hours?: string;
   certId?: string;
+  description?: string;
+  skills?: string[];
 }
 
 const certificationsData: Certification[] = [
-  { id: "power-bi", title: "Power BI for Beginners", issuer: "Simplilearn / Microsoft", date: "Jul 2026", image: "/certs/power-bi.jpg", certId: "10475876" },
+  { 
+    id: "power-bi", 
+    title: "Power BI for Beginners", 
+    issuer: "Simplilearn & Microsoft", 
+    date: "Jul 2026", 
+    image: "/certs/power-bi.jpg", 
+    certId: "10475876",
+    description: "Certificate code: 10475876. Successfully completed the online course Power BI for Beginners.",
+    skills: ["Power BI", "Data Analysis", "Visualization"]
+  },
   { id: "dsa", title: "CS201: Elementary Data Structures", issuer: "Saylor University", date: "Apr 14, 2026", image: "/certs/DSA.jpg", grade: "88.71%", hours: "36 Hours", certId: "8313450122PO" },
   { id: "ibm-hci", title: "User Experience Design Fundamentals", issuer: "IBM / SkillsBuild", date: "Apr 2026", image: "/certs/HCI%20IBM%20certificate.jpg" },
   { id: "cyber-sec", title: "CS260: Intro to Cryptography and Network Security", issuer: "Saylor Academy", date: "Apr 2026", image: "/certs/cyber%20security.jpg" },
@@ -147,13 +158,32 @@ export default function CertificationsSection() {
                   </span>
                 </div>
 
-                <div className="flex flex-col mt-2 z-10 relative">
+                <div className="flex flex-col mt-2 z-10 relative flex-1">
+                  <p className="text-sm text-[var(--accent-orange)] font-mono mb-1">
+                    {cert.issuer}
+                  </p>
                   <h3 className="text-lg font-semibold text-[var(--text)] group-hover:text-white transition-colors duration-300">
                     {cert.title}
                   </h3>
-                  <p className="text-sm text-[var(--text-muted)] mt-1">
-                    {cert.issuer}
-                  </p>
+                  
+                  {cert.description && (
+                    <p className="text-sm text-[var(--text-muted)] mt-3 leading-relaxed">
+                      {cert.description}
+                    </p>
+                  )}
+                  
+                  {cert.skills && cert.skills.length > 0 && (
+                    <div className="flex flex-wrap gap-2 mt-4">
+                      {cert.skills.map((skill) => (
+                        <span
+                          key={skill}
+                          className="px-2 py-1 text-[10px] font-mono rounded-md bg-white/5 text-[var(--text-muted)] border border-white/10"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
                 
                 {cert.image && (
