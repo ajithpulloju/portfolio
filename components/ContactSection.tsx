@@ -68,7 +68,7 @@ export default function ContactSection() {
         {/* Label */}
         <div className="flex items-center gap-4 mb-4">
           <span className="text-xs font-mono uppercase tracking-widest text-[var(--accent-orange)]">
-            08 / Contact
+            11 / Contact
           </span>
           <div className="flex-1 h-px bg-white/5" />
         </div>
@@ -146,13 +146,17 @@ export default function ContactSection() {
 
             {/* CTA Buttons */}
             <motion.div variants={itemVariants} className="flex flex-wrap gap-4 mt-4">
-              <a
-                href="mailto:pullojuajith@gmail.com"
+              <button
+                onClick={() => {
+                  const form = document.getElementById("contact-form");
+                  if (form) form.scrollIntoView({ behavior: "smooth" });
+                  setTimeout(() => document.getElementById("name-input")?.focus(), 500);
+                }}
                 className="btn-gradient flex items-center gap-2 px-7 py-3 rounded-xl text-white font-semibold text-sm shadow-lg hover:shadow-[0_0_30px_var(--glow-orange)] transition-all duration-300"
               >
                 <span>Hire Me</span>
                 <Send size={16} />
-              </a>
+              </button>
               <a
                 href="/resume.html"
                 target="_blank"
@@ -167,6 +171,7 @@ export default function ContactSection() {
 
           {/* Right — Message Card */}
           <motion.div
+            id="contact-form"
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -178,6 +183,7 @@ export default function ContactSection() {
               <div className="flex flex-col gap-1.5">
                 <label className="text-xs font-mono text-[var(--text-muted)] uppercase tracking-widest">Name</label>
                 <input
+                  id="name-input"
                   type="text"
                   placeholder="Your name"
                   className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-[var(--text)] placeholder:text-[var(--text-muted)] focus:border-[var(--accent-orange)] focus:outline-none focus:ring-1 focus:ring-[var(--accent-orange)] transition-all"

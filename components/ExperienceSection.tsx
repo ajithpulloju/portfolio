@@ -19,7 +19,7 @@ const experiences = [
   },
   {
     id: "02",
-    role: "Hackathon Participant",
+    role: "Hackathon Innovator",
     type: "Innovation & Rapid Development",
     period: "2023 – Present",
     color: "var(--accent-purple)",
@@ -33,16 +33,31 @@ const experiences = [
   },
   {
     id: "03",
-    role: "Open Source & Learning",
+    role: "AI & Product Development",
     type: "Continuous Skill Growth",
     period: "2024 – Present",
     color: "var(--accent-blue)",
     icon: <Code2 size={20} />,
     points: [
-      "Actively learning advanced full-stack and AI technologies",
+      "Actively learning advanced AI technologies and machine learning",
+      "Building personal products from scratch to strengthen practical experience",
+      "Practicing scalable architecture, deployment, and API integration",
       "Exploring open-source projects and developer communities",
-      "Practicing DSA, APIs, deployment, and scalable architecture",
-      "Building personal projects to strengthen practical experience",
+    ],
+  },
+  {
+    id: "04",
+    role: "Freelance Developer",
+    type: "Client Solutions & Product Development",
+    period: "2025 – Present",
+    color: "var(--accent-orange)", // Using orange or another color, we can reuse accent colors
+    icon: <Globe size={20} />,
+    points: [
+      "Developed ProteinPagal.in for a real business",
+      "Built complete frontend and backend solutions",
+      "Implemented authentication, database integration, and deployment",
+      "Worked on production-ready features and client requirements",
+      "Gained experience in real-world software delivery",
     ],
   },
 ];
@@ -62,7 +77,7 @@ export default function ExperienceSection() {
         {/* Label */}
         <div className="flex items-center gap-4 mb-4">
           <span className="text-xs font-mono uppercase tracking-widest text-[var(--accent-orange)]">
-            07 / Experience
+            09 / Experience
           </span>
           <div className="flex-1 h-px bg-white/5" />
         </div>
@@ -74,7 +89,7 @@ export default function ExperienceSection() {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-6 mb-24">
+        <div className="grid md:grid-cols-2 gap-6 mb-24">
           {experiences.map((exp, idx) => (
             <motion.div
               key={exp.id}

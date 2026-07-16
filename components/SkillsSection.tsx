@@ -55,8 +55,8 @@ export default function SkillsSection() {
 
         {/* Label */}
         <div className="flex items-center gap-6 mb-12">
-          <span className="text-[10px] font-light-custom tracking-[0.3em] uppercase text-[var(--text-muted)]">
-            SKILLS & EXPERTISE
+          <span className="text-xs font-mono uppercase tracking-widest text-[var(--accent-orange)]">
+            03 / SKILLS & EXPERTISE
           </span>
           <div className="flex-1 h-[1px] bg-white/5" />
         </div>

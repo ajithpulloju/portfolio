@@ -72,23 +72,18 @@ export default function AboutSection() {
             <div className="relative w-64 h-72 sm:w-80 sm:h-96 md:w-96 md:h-[440px]">
               {/* Glowing border frame */}
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[var(--accent-orange)] via-[var(--accent-purple)] to-[var(--accent-blue)] p-[2px]">
-                <div className="w-full h-full rounded-3xl overflow-hidden bg-dark-800">
+                <div className="relative w-full h-full rounded-3xl overflow-hidden bg-dark-800">
                   <Image
-                    src="/profile.jpg"
+                    src="/ajith.png"
                     alt="Pulloju Ajith"
                     fill
-                    className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                    className="object-cover grayscale"
                     onError={(e) => {
                       // Fallback if no image
                       (e.target as HTMLImageElement).style.display = "none";
                     }}
                   />
-                  {/* Fallback placeholder */}
-                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-dark-700 to-dark-900">
-                    <span className="font-bebas text-8xl text-gradient opacity-60">
-                      PA
-                    </span>
-                  </div>
+
                 </div>
               </div>
 

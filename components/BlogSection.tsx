@@ -54,7 +54,7 @@ export default function BlogSection() {
         {/* Label */}
         <div className="flex items-center gap-4 mb-4">
           <span className="text-xs font-mono uppercase tracking-widest text-[var(--accent-orange)]">
-            09 / Blog
+            10 / Blog
           </span>
           <div className="flex-1 h-px bg-white/5" />
         </div>

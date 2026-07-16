@@ -17,12 +17,8 @@ interface Certification {
 
 const certificationsData: Certification[] = [
   { id: "dsa", title: "CS201: Elementary Data Structures", issuer: "Saylor University", date: "Apr 14, 2026", image: "/certs/DSA.jpg", grade: "88.71%", hours: "36 Hours", certId: "8313450122PO" },
-  { id: "kits-merit", title: "HACKSTORM 2026 - Certificate of Merit", issuer: "KITSW", date: "Apr 2026", image: "/certs/KITs%20Hackathon%20merit%201st.jpg" },
-  { id: "kits-part", title: "HACKSTORM 2026 - Participation", issuer: "KITSW", date: "Apr 2026", image: "/certs/KITs%20Hackathon%20participation%20.jpg" },
   { id: "ibm-hci", title: "User Experience Design Fundamentals", issuer: "IBM / SkillsBuild", date: "Apr 2026", image: "/certs/HCI%20IBM%20certificate.jpg" },
-  { id: "hack-udbhava", title: "UDBHAVA X '26 Hackathon", issuer: "SR University Coding Club", date: "Apr 2026", image: "/certs/UDBHAVA%20X%20Hackathon.jpg" },
   { id: "cyber-sec", title: "CS260: Intro to Cryptography and Network Security", issuer: "Saylor Academy", date: "Apr 2026", image: "/certs/cyber%20security.jpg" },
-  { id: "proj-expo", title: "Cubesat - PRAGATHI PROJECT EXPO 2K26", issuer: "SR University", date: "Mar 2026", image: "/certs/Pragathi%20project%20expo.jpg" },
   { id: "3d-print", title: "Additive Manufacturing", issuer: "OpenLearn", date: "Feb 2026", image: "/certs/3d%20printing.jpg" },
   { id: "ccna-1", title: "CCNA: Introduction to Networks (Completion)", issuer: "Cisco Networking", date: "Nov 2025", image: "/certs/CCNAITNUpdated20251123-31-5mgukn.jpg" },
   { id: "ccna-2", title: "CCNA: Introduction to Networks (Certificate)", issuer: "Cisco Networking", date: "Nov 2025", image: "/certs/CCNA-_Introduction_to_Networks_certificate_2403a51366-sru-edu-in_156a1f0f-a767-4141-8ae2-899a6fd1f8fc.jpg" },
@@ -41,8 +37,6 @@ const certificationsData: Certification[] = [
   { id: "game-design", title: "PHYS101: Introduction to Mechanics", issuer: "Saylor Academy", date: "Mar 2025", image: "/certs/game%20design.jpg" },
   { id: "game-design-2", title: "Elastic Collisions in Particle Physics", issuer: "MindLuster", date: "Mar 2025", image: "/certs/game%20design%202.jpg" },
   { id: "os", title: "Introduction to Unix", issuer: "Infosys Springboard", date: "Mar 2025", image: "/certs/os.jpg" },
-  { id: "hack-inno-2", title: "INNO-VA-THON 2.0 MEGA HACKATHON", issuer: "VNRVJIET & ISOI/IEEE", date: "Jan 2025", image: "/certs/hackthon.jpg" },
-  { id: "gaming-club", title: "E-GAMING CLUB Membership", issuer: "SR University", date: "2024-2025", image: "/certs/gaming%20club.jpg" },
   { id: "wolf-diff", title: "Differential Equations - Level 1", issuer: "Wolfram U", date: "Nov 2024", image: "/certs/defer%20maths.jpg" },
   { id: "wolf-calc-1", title: "Introduction to Calculus", issuer: "Wolfram U", date: "Oct 2024", image: "/certs/calculus%201.jpg" },
   { id: "wolf-calc-intro", title: "Calculus - Level 1 Certificate", issuer: "Wolfram U", date: "Oct 2024", image: "/certs/calculus%202.jpg" }
@@ -95,7 +89,7 @@ export default function CertificationsSection() {
         {/* Header Label */}
         <div className="flex items-center gap-4 mb-4">
           <span className="text-xs font-mono uppercase tracking-widest text-[var(--accent-orange)]">
-            06 / Certifications
+            07 / Certifications
           </span>
           <div className="flex-1 h-px bg-white/5" />
         </div>
