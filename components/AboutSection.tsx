@@ -12,12 +12,13 @@ const keywords = [
 function highlightText(text: string) {
   let result = text;
   const highlights = [
-    { key: "Full Stack Development", color: "var(--accent-purple)" },
-    { key: "Artificial Intelligence", color: "var(--accent-orange)" },
-    { key: "AI-powered systems", color: "var(--accent-orange)" },
+    { key: "Full Stack Developer", color: "var(--accent-purple)" },
+    { key: "React, Node.js, JavaScript, Supabase, and AI technologies", color: "var(--accent-orange)" },
+    { key: "Protein Pagal", color: "var(--accent-blue)" },
+    { key: "AI Diet Planner", color: "var(--accent-orange)" },
+    { key: "CubeSat", color: "var(--accent-purple)" },
     { key: "hackathons", color: "var(--accent-blue)" },
-    { key: "intelligent and scalable digital solutions", color: "var(--accent-orange)" },
-    { key: "open-source learning", color: "var(--accent-blue)" },
+    { key: "Power BI", color: "var(--accent-orange)" },
   ];
 
   return highlights.reduce((acc, h) => {
@@ -41,9 +42,10 @@ const itemVariants = {
 
 export default function AboutSection() {
   const paragraphs = [
-    "Hello! I’m Pulloju Ajith, a passionate B.Tech CSE student (3rd Year) at SR University with a strong interest in Full Stack Development, Artificial Intelligence, and real-world problem solving.",
-    "I enjoy building modern web applications, AI-powered systems, and innovative tech projects that create real impact. I actively participate in hackathons, explore emerging technologies, and continuously improve my development skills through practical projects and open-source learning.",
-    "My goal is to become a skilled software engineer capable of building intelligent and scalable digital solutions."
+    "Pulloju Ajith is a Full Stack Developer and B.Tech Computer Science student at SR University, Warangal.",
+    "He develops scalable web applications using React, Node.js, JavaScript, Supabase, and AI technologies.",
+    "His projects include Protein Pagal, AI Diet Planner, CubeSat, and other modern web applications.",
+    "He has participated in hackathons and earned certifications in Power BI and web development."
   ];
 
   return (
