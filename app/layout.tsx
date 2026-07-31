@@ -56,7 +56,8 @@ const jsonLd = {
   },
   sameAs: [
     "https://www.linkedin.com/in/pulloju-ajith-325b7a25b/", 
-    "https://github.com/ajithpulloju"
+    "https://github.com/ajithpulloju",
+    "https://www.instagram.com/chaotix_sthetix"
   ],
 };
 
