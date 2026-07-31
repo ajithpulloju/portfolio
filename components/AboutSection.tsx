@@ -13,12 +13,13 @@ function highlightText(text: string) {
   let result = text;
   const highlights = [
     { key: "Full Stack Developer", color: "var(--accent-purple)" },
-    { key: "React, Node.js, JavaScript, Supabase, and AI technologies", color: "var(--accent-orange)" },
+    { key: "React.js, JavaScript, Node.js, Express.js, MongoDB, Supabase, SQL, HTML, CSS, Tailwind CSS, and Artificial Intelligence", color: "var(--accent-orange)" },
     { key: "Protein Pagal", color: "var(--accent-blue)" },
     { key: "AI Diet Planner", color: "var(--accent-orange)" },
-    { key: "CubeSat", color: "var(--accent-purple)" },
-    { key: "hackathons", color: "var(--accent-blue)" },
-    { key: "Power BI", color: "var(--accent-orange)" },
+    { key: "fitness coach", color: "var(--accent-blue)" },
+    { key: "National-Level Basketball Champion", color: "var(--accent-purple)" },
+    { key: "Muscle building", color: "var(--accent-orange)" },
+    { key: "science-based training", color: "var(--accent-blue)" },
   ];
 
   return highlights.reduce((acc, h) => {
@@ -42,10 +43,10 @@ const itemVariants = {
 
 export default function AboutSection() {
   const paragraphs = [
-    "Pulloju Ajith is a Full Stack Developer and B.Tech Computer Science student at SR University, Warangal.",
-    "He develops scalable web applications using React, Node.js, JavaScript, Supabase, and AI technologies.",
-    "His projects include Protein Pagal, AI Diet Planner, CubeSat, and other modern web applications.",
-    "He has participated in hackathons and earned certifications in Power BI and web development."
+    "<strong class='text-[var(--text)] text-xl'>💻 Professional Profile</strong><br />Pulloju Ajith is a Full Stack Developer specializing in designing and developing modern, scalable web applications. He works with technologies including React.js, JavaScript, Node.js, Express.js, MongoDB, Supabase, SQL, HTML, CSS, Tailwind CSS, and Artificial Intelligence.<br /><br />His notable projects include Protein Pagal, a high-protein food ordering platform, an AI Diet Planner, and other web applications focused on solving real-world problems. He is passionate about creating fast, responsive, and user-friendly digital experiences.",
+    "<strong class='text-[var(--text)] text-xl'>💪 Fitness & Health Coaching</strong><br />Alongside his career in technology, Pulloju Ajith is a dedicated fitness coach and bodybuilder. He provides personalized guidance for Muscle building, Strength training, Fat loss, Body transformation, Nutrition planning, and Customized diet plans. His goal is to help individuals achieve sustainable fitness through science-based training, proper nutrition, and consistent lifestyle habits.",
+    "<strong class='text-[var(--text)] text-xl'>🏀 Basketball</strong><br />Pulloju Ajith is also a National-Level Basketball Champion who has represented his skills in competitive basketball. His experience in sports has strengthened his leadership, teamwork, discipline, mental resilience, and decision-making abilities—qualities that he also applies in software development and coaching.",
+    "<strong class='text-[var(--text)] text-xl'>🎯 Mission</strong><br />Pulloju Ajith believes in combining technology, fitness, and discipline to create a positive impact. His mission is to build innovative digital products, help people improve their health and fitness, and inspire others to pursue continuous growth in both their professional and personal lives."
   ];
 
   return (
