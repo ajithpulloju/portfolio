@@ -206,7 +206,7 @@ export default function ActivityStreamSection() {
 
               {/* Footer */}
               <div className="mt-4 text-right" style={mutedStyle}>
-                // contribs over last year
+                {"// contribs over last year"}
               </div>
             </div>
           </motion.div>
@@ -235,7 +235,7 @@ export default function ActivityStreamSection() {
                     LeetCode Stats_
                   </h3>
                   <p style={{ ...mutedStyle, marginTop: "6px" }}>
-                    // @257yNl9LGP
+                    {"// @257yNl9LGP"}
                   </p>
                 </div>
                 <a

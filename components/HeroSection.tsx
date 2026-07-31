@@ -219,13 +219,13 @@ export default function HeroSection() {
 
             <div className="max-w-2xl text-sm sm:text-base text-[var(--text-muted)] leading-[1.8] font-light-custom border-l border-white/10 pl-6 animate-glow flex flex-col gap-2">
               <motion.span style={{ opacity: desc1Op, y: desc1Y }}>
-                I'm a 3rd-year Computer Science Engineering student passionate about <span className="text-[var(--text)]">Full Stack Development</span>, <span className="text-[var(--text)]">AI solutions</span>, and modern web technologies.
+                I&apos;m a 3rd-year Computer Science Engineering student passionate about <span className="text-[var(--text)]">Full Stack Development</span>, <span className="text-[var(--text)]">AI solutions</span>, and modern web technologies.
               </motion.span>
               <motion.span style={{ opacity: desc2Op, y: desc2Y }}>
                 I love building real-world projects, participating in hackathons, and creating impactful digital experiences.
               </motion.span>
               <motion.span style={{ opacity: finalOp, y: finalY }} className="text-[var(--accent-orange)] block mt-2 text-xs uppercase tracking-widest font-mono">
-                "Building impactful products with code, creativity, and AI."
+                &quot;Building impactful products with code, creativity, and AI.&quot;
               </motion.span>
             </div>
 
