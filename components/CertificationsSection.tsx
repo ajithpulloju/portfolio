@@ -19,6 +19,15 @@ interface Certification {
 
 const certificationsData: Certification[] = [
   { 
+    id: "claude-101", 
+    title: "Claude 101", 
+    issuer: "Anthropic", 
+    date: "Aug 2026", 
+    image: "/certs/claude-101.jpg", 
+    description: "Successfully completed the Claude 101 certification.",
+    skills: ["AI", "Prompt Engineering", "Claude"]
+  },
+  { 
     id: "power-bi", 
     title: "Power BI for Beginners", 
     issuer: "Simplilearn & Microsoft", 

@@ -16,15 +16,6 @@ interface Internship {
 
 const internshipsData: Internship[] = [
   { 
-    id: "cert-power-bi", 
-    role: "Power BI for Beginners", 
-    company: "Simplilearn & Microsoft", 
-    duration: "Jul 2026", 
-    description: "Certificate code: 10475876. Successfully completed the online course Power BI for Beginners.", 
-    skills: ["Power BI", "Data Analysis", "Visualization"],
-    // image: "/certs/power-bi.jpg" // Uncomment and add the image file path here once uploaded
-  },
-  { 
     id: "int-1", 
     role: "Web Development Back-End Intern", 
     company: "1stop / Worisgo", 
