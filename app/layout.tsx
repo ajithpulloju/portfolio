@@ -35,11 +35,20 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://pullojuajithportfolio.vercel.app/",
     siteName: "Pulloju Ajith Portfolio",
+    images: [
+      {
+        url: "https://pullojuajithportfolio.vercel.app/ajith.png",
+        width: 800,
+        height: 600,
+        alt: "Pulloju Ajith Profile",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Pulloju Ajith | Developer & Coach",
     description: "Full Stack Developer, Fitness Coach, and National-Level Basketball Champion from Warangal.",
+    images: ["https://pullojuajithportfolio.vercel.app/ajith.png"],
   }
 };
 
@@ -48,6 +57,7 @@ const jsonLd = {
   "@type": "Person",
   name: "Pulloju Ajith",
   url: "https://pullojuajithportfolio.vercel.app/",
+  image: "https://pullojuajithportfolio.vercel.app/ajith.png",
   jobTitle: ["Full Stack Developer", "Fitness Coach", "Athlete"],
   description: "Pulloju Ajith is a Full Stack Developer, Fitness Coach, and National-Level Basketball Champion from Warangal, Telangana, India.",
   alumniOf: {
