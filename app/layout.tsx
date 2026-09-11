@@ -27,20 +27,11 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://pullojuajithportfolio.vercel.app/",
     siteName: "Pulloju Ajith Portfolio",
-    images: [
-      {
-        url: "https://pullojuajithportfolio.vercel.app/ajith.png",
-        width: 800,
-        height: 600,
-        alt: "Pulloju Ajith Profile",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Pulloju Ajith | Full Stack Developer",
     description: "Full Stack Developer from Warangal building scalable web applications.",
-    images: ["https://pullojuajithportfolio.vercel.app/ajith.png"],
   }
 };
 
@@ -49,7 +40,6 @@ const jsonLd = {
   "@type": "Person",
   name: "Pulloju Ajith",
   url: "https://pullojuajithportfolio.vercel.app/",
-  image: "https://pullojuajithportfolio.vercel.app/ajith.png",
   jobTitle: ["Full Stack Developer", "Software Engineer"],
   description: "Pulloju Ajith is a Full Stack Developer from Warangal, Telangana, India, specializing in React, Node.js, and AI.",
   alumniOf: {
