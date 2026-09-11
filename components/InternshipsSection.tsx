@@ -16,6 +16,24 @@ interface Internship {
 
 const internshipsData: Internship[] = [
   { 
+    id: "sih-2026", 
+    role: "Smart India Hackathon (SIH) — 1st Place", 
+    company: "SR University", 
+    duration: "Sep 2026", 
+    description: "Secured 1st Place at Smart India Hackathon (SIH), advancing to the National Level.", 
+    skills: ["Hackathon", "Problem Solving"],
+    image: "/certs/sih.jpg" 
+  },
+  { 
+    id: "techsphere-2026", 
+    role: "TechSphere — 2nd Place", 
+    company: "Woxsen University", 
+    duration: "2026", 
+    description: "Secured 2nd Place at TechSphere, a technical competition hosted by Woxsen University.", 
+    skills: ["Competition", "Innovation"],
+    image: "/certs/techsphere.jpg" 
+  },
+  { 
     id: "int-1", 
     role: "Web Development Back-End Intern", 
     company: "1stop / Worisgo", 
