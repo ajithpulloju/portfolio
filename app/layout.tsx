@@ -5,33 +5,25 @@ import { CursorGlow } from "@/components/CursorGlow";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Pulloju Ajith | Full Stack Developer & Fitness Coach",
+  title: "Pulloju Ajith | Full Stack Developer",
   description:
-    "Pulloju Ajith is a Full Stack Developer, Fitness Coach, and National-Level Basketball Champion from Warangal, India. Specializing in modern web applications, AI, and health coaching.",
+    "Pulloju Ajith is a Full Stack Developer from Warangal, India. Specializing in modern scalable web applications, React, Node.js, and Artificial Intelligence.",
   keywords: [
     "Pulloju Ajith",
     "Pulloju Ajith Portfolio",
     "Pulloju Ajith Full Stack Developer",
-    "Pulloju Ajith Fitness Coach",
-    "Pulloju Ajith Bodybuilder",
-    "Pulloju Ajith Basketball Player",
-    "National Level Basketball Champion",
     "Protein Pagal Founder",
     "React Developer",
     "Node.js Developer",
     "AI Developer",
     "Web Developer India",
-    "Fitness Trainer",
-    "Muscle Building Coach",
-    "Diet Planner",
-    "Health Coach",
     "SR University",
     "Warangal"
   ],
   authors: [{ name: "Pulloju Ajith" }],
   openGraph: {
-    title: "Pulloju Ajith | Full Stack Developer & Fitness Coach",
-    description: "Full Stack Developer, Fitness Coach, and National-Level Basketball Champion. Building innovative digital products and inspiring healthy lifestyles.",
+    title: "Pulloju Ajith | Full Stack Developer",
+    description: "Full Stack Developer building innovative digital products and scalable web applications.",
     type: "website",
     url: "https://pullojuajithportfolio.vercel.app/",
     siteName: "Pulloju Ajith Portfolio",
@@ -46,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pulloju Ajith | Developer & Coach",
-    description: "Full Stack Developer, Fitness Coach, and National-Level Basketball Champion from Warangal.",
+    title: "Pulloju Ajith | Full Stack Developer",
+    description: "Full Stack Developer from Warangal building scalable web applications.",
     images: ["https://pullojuajithportfolio.vercel.app/ajith.png"],
   }
 };
@@ -58,8 +50,8 @@ const jsonLd = {
   name: "Pulloju Ajith",
   url: "https://pullojuajithportfolio.vercel.app/",
   image: "https://pullojuajithportfolio.vercel.app/ajith.png",
-  jobTitle: ["Full Stack Developer", "Fitness Coach", "Athlete"],
-  description: "Pulloju Ajith is a Full Stack Developer, Fitness Coach, and National-Level Basketball Champion from Warangal, Telangana, India.",
+  jobTitle: ["Full Stack Developer", "Software Engineer"],
+  description: "Pulloju Ajith is a Full Stack Developer from Warangal, Telangana, India, specializing in React, Node.js, and AI.",
   alumniOf: {
     "@type": "CollegeOrUniversity",
     name: "SR University",
