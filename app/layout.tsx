@@ -40,6 +40,11 @@ const jsonLd = {
   "@type": "Person",
   name: "Pulloju Ajith",
   url: "https://pullojuajithportfolio.vercel.app/",
+  image: {
+    "@type": "ImageObject",
+    "url": "https://pullojuajithportfolio.vercel.app/ajith.png",
+    "caption": "Pulloju Ajith - Full Stack Developer"
+  },
   jobTitle: ["Full Stack Developer", "Software Engineer"],
   description: "Pulloju Ajith is a Full Stack Developer from Warangal, Telangana, India, specializing in React, Node.js, and AI.",
   alumniOf: {
