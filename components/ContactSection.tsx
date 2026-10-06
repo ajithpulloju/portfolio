@@ -30,7 +30,7 @@ const socialLinks = [
   {
     icon: <Linkedin size={22} />,
     label: "LinkedIn",
-    href: "https://linkedin.com/in/pullojuajith",
+    href: "https://linkedin.com/in/pulloju-ajith",
     color: "#0A66C2",
   },
   {

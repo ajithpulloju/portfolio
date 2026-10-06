@@ -248,7 +248,7 @@ export default function HeroSection() {
                 <a href="https://github.com/pullojuajith" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full glass border border-white/10 flex items-center justify-center text-[var(--text-muted)] hover:text-[var(--accent-orange)] transition-all duration-300" aria-label="GitHub">
                   <Github size={16} />
                 </a>
-                <a href="https://linkedin.com/in/pullojuajith" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full glass border border-white/10 flex items-center justify-center text-[var(--text-muted)] hover:text-[var(--accent-orange)] transition-all duration-300" aria-label="LinkedIn">
+                <a href="https://linkedin.com/in/pulloju-ajith" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full glass border border-white/10 flex items-center justify-center text-[var(--text-muted)] hover:text-[var(--accent-orange)] transition-all duration-300" aria-label="LinkedIn">
                   <Linkedin size={16} />
                 </a>
                 <a href="https://www.instagram.com/ajju_xo.xo/" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full glass border border-white/10 flex items-center justify-center text-[var(--text-muted)] hover:text-[var(--accent-orange)] transition-all duration-300" aria-label="Instagram">

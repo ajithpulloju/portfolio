@@ -22,7 +22,7 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             {[
               { icon: <Github size={18} />, href: "https://github.com/pullojuajith", label: "GitHub" },
-              { icon: <Linkedin size={18} />, href: "https://linkedin.com/in/pullojuajith", label: "LinkedIn" },
+              { icon: <Linkedin size={18} />, href: "https://linkedin.com/in/pulloju-ajith", label: "LinkedIn" },
               { icon: <Instagram size={18} />, href: "https://www.instagram.com/ajju_xo.xo/", label: "Instagram" },
               { icon: <Mail size={18} />, href: "mailto:pullojuajith@gmail.com", label: "Email" },
             ].map((s) => (

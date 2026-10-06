@@ -52,7 +52,7 @@ const jsonLd = {
     name: "SR University",
   },
   sameAs: [
-    "https://www.linkedin.com/in/pulloju-ajith-325b7a25b/", 
+    "https://www.linkedin.com/in/pulloju-ajith", 
     "https://github.com/ajithpulloju",
     "https://www.instagram.com/chaotix_sthetix"
   ],
